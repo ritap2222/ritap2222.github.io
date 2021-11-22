@@ -1,0 +1,152 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script >
+   $(document).ready(function() {
+    $("#h21").css("color", "black");
+    $("#target1").addClass("animated shake");
+    $("#target2").addClass("animated shake");
+    $("#target1").css("color", "red");
+    $("#target2").css("color", "green");
+    $("#target3").hide();
+    $("#target1").click(function(){
+    $("#target3").fadeIn();
+      });
+    $("#target2").click(function(){
+    $("#target3").fadeOut();
+      });
+   });
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  
+  body {
+    background-color: #1E90FF;
+  }
+  
+  .smaller-image {
+     width: 200px;
+     border-color:blue;
+     border-radius:50%;
+  }
+  
+  h1 {
+    font-family:Impact;
+    color:white;
+  }
+  
+  .blue-text {
+    font-family:Impact;
+    color:navy;
+  }
+  
+  p {
+    font-family:Impact;
+  }
+  
+  .white-background{
+    background-color: white;
+    width: 510px;
+    border-radius:5%;
+  }
+  
+</style>
+
+<h1 class="black-text">Ritap的企鵝樂園</h1>
+
+<main>
+  
+<div class="white-background">
+  <h2 class="blue-text">瞬移區</h2>
+  <ul>
+  <li><a href="#footer1">我喜歡的企鵝</a><br></li>
+  <br>
+  <li><a href="#footer2">企鵝冷知識</a></li>
+  <br>
+  <li><a href="#footer3">企鵝樂園調查</a></li>
+  </ul>
+  <br>
+  <br>
+ </div>
+  
+<div class="white-background">
+  <h2 class="blue-text">園區管理員介紹</h2>
+    <img class="smaller-image" src="https://img.onl/dMe8w7" border="10" alt="This is optimistic penguin.">
+    <p>我是 ritap</P>
+    <p>一個因為pingu動畫喜歡上企鵝的女子</P>
+    <p>希望有一天可以抱到皇帝企鵝寶寶</P>
+ <br>
+ <br>
+</div>
+  
+<footer id="footer1"></footer>
+
+<br>
+<div class="white-background">
+  <br>
+    <h3 class="blue-text">我喜歡企鵝的排名</h3>
+    <ol>
+      <li>皇帝企鵝寶寶</li>
+      <br>
+      <li>阿德利企鵝</li>
+   </ol>
+
+
+    <p>比皇帝企鵝寶寶還小隻的阿德利企鵝英勇事蹟</p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/Z7PlUGbsXlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>
+<br>
+
+
+<div class="white-background">
+<footer id="footer2"></footer>
+
+<div>
+  <br>
+  <h3 class="blue-text">企鵝冷知識</h3>
+    <ol>
+      <li>一開始以為國王企鵝是最大的所以才叫國王企鵝<br><br>後來發現有一個企鵝更大，把新發現的企鵝取名叫皇帝企鵝</li>
+      <br>
+      <li>阿德利企鵝用石頭築巢來養育寶寶
+       <br>
+       <br>
+          牠們不只會自己找石頭，還會偷別家企鵝的石頭來築巢</li>
+    </ol>
+</div>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/M--8devfaaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+
+<footer id="footer3"></footer>
+
+<div class="white-background">
+  
+  <h3 class="blue-text">企鵝樂園調查</h3>
+  <p>看到最後有想去看真企鵝的念頭嗎?</p>
+  <label><input type="radio" name="Yes-No" checked>有的有的，我已經想去看真企鵝了</label>
+  <br>
+  <br>
+  <label><input type="radio" name="Yes-No" checked>沒有沒有，企鵝樂園的介紹沒有吸引到我</label>
+  <br>
+  <br>
+  
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<div>
+  <h2 class="text-primary" id="h21">南極企鵝危險中(先按阿德利再按皇帝)
+  </h2>
+</div>
+
+<div class="col-xs-6">
+  <div class="well" id="right-well">
+    <button class="btn btn-default target" id="target1">阿德利企鵝</button>
+    <button class="btn btn-default target" id="target2">皇帝企鵝</button>
+    <button class="btn btn-default target" id="target3">企鵝的結局是消失</button>
+  </div>
+</div>
